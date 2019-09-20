@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Point Vertex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/assets/icon64.png">
+  <meta property="description" content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
+  <meta property="og:title" content="Vertex.io">
+  <meta property="og:description" content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
+  <meta property="og:image" content="/assets/icon1200.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58664433-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-58664433-3');
+  </script>
+  
+<link href="game.08e4d2ec978745ae9c74.css" rel="stylesheet"></head>
+<body>
+  <canvas id="game-canvas"></canvas>
+  
+  <!-- Play Menu -->
+  <div id="play-menu" class="hidden">   
+    
+    <h1>Vertex.io</h1>
+    <p>
+      Stay alive and shoot other players.
+      <br />
+      Use your mouse to move.
+    </p>
+    <p>
+      <!-- </ br> -->
+      Developed by <a>Dayton Wallace</a>.
+    </p>
+    
+    <hr />
+    <input type="text" id="username-input" placeholder="Username"/>
+    <button id="play-button">PLAY</button>   
+    <button id="class-selection">CLASS SELECTION</button>
+      
+    <script>
+      if (!Username) {
+        
+      }
+    </script>
+    
+  </div>
+  
+  <!-- Class Selection -->
+  <div id="class-menu" class="hidden">
+    
+    <h1>Select Your Class</h1>
+    <p>
+      Different classes have different abilities.
+      <br />
+      Each class will give you a boost as well as a nerf in certain stats.
+    </p>
+    
+    <hr />
+    <!--<input type="text" id="username-input" placeholder="Username" />
+    <button id="play-button">PLAY</button>   
+    <button id="class-selection">CLASS SELECTION</button>-->
+      
+  </div>
+  
+  <div id="class-thingy" class="hidden">
+  <!--Class selection-->
+  <h1>
+    Aye what's cappin
+  </h1>
+  
+  </div>
+  
+  <!-- Leaderboard -->
+  <div id="leaderboard" class="hidden">
+    <table>
+      <tr>
+        <th>Username</th>
+        <th>Score</th>
+      </tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+    </table>
+  </div>
+  <div id="disconnect-modal" class="hidden">
+    <div>
+      <h2>Disconnected from Server </h2>
+      <hr />
+      <button id="reconnect-button">RECONNECT</button>
+    </div>
+  </div>
+<script type="text/javascript" src="game.cf32c6aee1e04376d369.js"></script></body>
+</html>
