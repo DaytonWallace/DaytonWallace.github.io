@@ -1,5 +1,10 @@
 #ask {
   color: green;
   text-align: center;
-  padding 50px;
   }
+
+#title {
+  text-align: center;
+  border: 2px solid #1e90ff;
+  border-radius: 20px;
+}
