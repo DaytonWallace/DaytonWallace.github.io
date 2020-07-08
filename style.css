@@ -55,4 +55,6 @@
   padding: 50px;
   margin: 20px;
   background-image: url("https://raw.githubusercontent.com/DaytonWallace/daytonwallace.github.io/master/logo-2.png");
+  position: relative;
+  left: 30px;
 }
