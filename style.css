@@ -20,6 +20,11 @@
   display: inline-block;
 }
 
+#Logo {
+  width: auto;
+  height: auto;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
