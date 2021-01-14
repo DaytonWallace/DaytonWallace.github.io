@@ -11,6 +11,12 @@
   margin-right: 108px;
   margin-left: 972px;
   margin-bottom: 1500px;
+}
+
+#Logo {
+  width: 10%;
+  height: 10%;
+}
 
 .dropbtn {
   background-color: #4CAF50;
@@ -23,11 +29,6 @@
 .dropdown {
   position: relative;
   display: inline-block;
-}
-
-#Logo {
-  width: 10%;
-  height: 10%;
 }
 
 .dropdown-content {
