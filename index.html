@@ -18,6 +18,13 @@
         </div>
         
         <style>
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+            }
+            
             .zoom {
                 padding: 8px 8px 8px 32px;
                 text-decoration: none;
@@ -52,11 +59,11 @@
             
             #support:hover {
                 transform: scale(1.05);
-                background-color: FFFFFF;
+                background-color: 333;
             }
             
             .buttons {
-                margin: 50px;
+                margin: 10px;
                 margin-left: 80%;
             }
             
@@ -67,12 +74,16 @@
                 display: table;
                 margin: 0 auto;
             }
+            
+            .buttons {
+                display: inline;
+            }
         </style>
 
         <div class="zoom">
             <ul style="list-style-type:none;" class="buttons">
-              <li><button onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=783898327220486164&permissions=2147483639&scope=bot'" type="button" id="invitebot"><b>Invite Now</b></button></li>
-              <li><button onclick="location.href='https://discord.gg/Xvvv5aRtex'" type="button" id="support"><b>Support Server</b></button></li>
+              <li style="float:right"><button onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=783898327220486164&permissions=2147483639&scope=bot'" type="button" id="invitebot"><b>Invite Now</b></button></li>
+              <li style="float:right"><button onclick="location.href='https://discord.gg/Xvvv5aRtex'" type="button" id="support"><b>Support Server</b></button></li>
             </ul> 
         </div>            
     </body>
