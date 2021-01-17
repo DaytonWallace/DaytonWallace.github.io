@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <div class="zoom">
-            <ul style="list-style-type:none;" class="buttons">
+            <ul class="buttons">
               <li style="float:right"><a href='https://discord.com/api/oauth2/authorize?client_id=783898327220486164&permissions=2147483639&scope=bot' id="invitebot"><b>Invite Now</b></li>
               <li style="float:right"><a href='https://discord.gg/Xvvv5aRtex' id="support"><b>Support</b></li>
             </ul> 
@@ -56,12 +56,20 @@
             }
             
             .buttons {
-                display: inline;
-                margin: 0 auto;
-                border-color: transparent;
-                background-color: transparent;
-                position: sticky;
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
                 overflow: hidden;
+                background-color: #333;
+                position: sticky;
+            }
+            
+            li a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
             }
             
             .features {
