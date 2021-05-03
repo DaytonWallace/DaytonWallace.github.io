@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage": "https://daytonwallace.github.io/website/",
+  "homepage": "https://DaytonWallace.github.io/website/",
   "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
