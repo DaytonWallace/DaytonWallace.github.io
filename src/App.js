@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './assets/logos/logok.png';
 import './App.css';
 
 function App() {
@@ -6,17 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <ul>
+          <li><a href="https://discord.gg/Xvvv5aRtex">Support</a> </li>
+          <li><a href="https://discord.com/api/oauth2/authorize?client_id=783898327220486164&permissions=2147483639&scope=bot">Invite Now</a></li>
+        </ul>
       </header>
     </div>
   );
