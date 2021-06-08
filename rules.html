@@ -28,8 +28,39 @@
       <h3> By playing on our server, you agree to/with these rules, and any punishments you may receive while playing. We are also not responsible for any information about player's being leaked, or anything at all. We do not claim responsibility for anything that occurs during play hours. </h3>
     </div>
     
-    <li><a href="https://suclerious.me">I do not agree to these rules.</a></li>
-    <li><a href="https://suclerious.me/yes">I agree to these rules.</a></li>
+    <li id="no"><a href="https://suclerious.me">I do not agree to these rules.</a></li>
+    <li id="yes"><a href="https://suclerious.me/yes">I agree to these rules.</a></li>
     <footer> This is not associated with the Discord bot named Suclerious. Or at least not yet. </footer>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+      }
+
+      li {
+        float: center;
+      }
+
+      li a {
+        display: block;
+        color: FF0000;
+        text-align: center;
+        padding: 28px 32px;
+        text-decoration: none;
+        border-radius: 12px;
+      }
+      
+      #yes {
+        background-color: green;
+      }
+      
+      #no {
+        background-color: red
+      }
+    </style>
   </body>
 </html>
