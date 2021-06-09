@@ -28,33 +28,34 @@
       <h3> By playing on our server, you agree to/with these rules, and any punishments you may receive while playing. We are also not responsible for any information about player's being leaked, or anything at all. We do not claim responsibility for anything that occurs during play hours. </h3>
     </div>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LcFJiAbAAAAAFjgwNMJwZTAMSTgRJq254nj7jK7"></div>
-    <script>
-      document.getElementById('yes').addEventListener("click", function() {
-        $recaptcha = $_POST['g-recaptcha-response'];
-        $res = reCaptcha($recaptcha);
-        if(!$res['success']){
-          alert("Confirm the captcha.");
-        }
-        
-        function reCaptcha($recaptcha){
-          $secret = "6LcFJiAbAAAAALaEzzDcWcwUsp9pbALWqNp5YU-d";
-          $ip = $_SERVER['REMOTE_ADDR'];
+    <div class="g-recaptcha-brochure__form__captcha" data-sitekey="6LcFJiAbAAAAAFjgwNMJwZTAMSTgRJq254nj7jK7"></div>
+      <script>
+        document.getElementById('yes').addEventListener("click", function() {
+          $recaptcha = $_POST['g-recaptcha-response'];
+          $res = reCaptcha($recaptcha);
+          if(!$res['success']){
+            alert("Confirm the captcha.");
+          }
 
-          $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
-          $url = "https://www.google.com/recaptcha/api/siteverify";
-          $ch = curl_init();
-          curl_setopt($ch, CURLOPT_URL, $url);
-          curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-          curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-          curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
-          $data = curl_exec($ch);
-          curl_close($ch);
+          function reCaptcha($recaptcha){
+            $secret = "6LcFJiAbAAAAALaEzzDcWcwUsp9pbALWqNp5YU-d";
+            $ip = $_SERVER['REMOTE_ADDR'];
 
-          return json_decode($data, true);
-        }
-      });  
-    </script>
+            $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
+            $url = "https://www.google.com/recaptcha/api/siteverify";
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
+            $data = curl_exec($ch);
+            curl_close($ch);
+
+            return json_decode($data, true);
+          }
+        });  
+      </script>
+    </div>
     <ul>
       <li id="no"><a href="https://suclerious.me">I do not agree to these rules.</a></li>
       <li id="yes"><a href="https://suclerious.me/yes">I agree to these rules.</a></li>
@@ -104,6 +105,12 @@
       
       p {
         font-size: 0.95vw;
+      }
+      
+      .g-recaptcha-brochure__form__captcha {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
       }
     </style>
   </body>
