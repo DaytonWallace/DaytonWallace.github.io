@@ -36,6 +36,10 @@
 	padding: 18px 20px;
 }
 
+body {
+	background-color: 1d2021;
+}
+
 .topnav img {
 	display: inline-block;
 	float: left;
