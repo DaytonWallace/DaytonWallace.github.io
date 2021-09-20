@@ -87,11 +87,10 @@ li {
 }
 
 .LicensingTerms {
-    margin-top: 50vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-top: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     text-align: left;
     color: A9A9A9;
-    padding: 5vw;
     line-height: 50px;
 }
