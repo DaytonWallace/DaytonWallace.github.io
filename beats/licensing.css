@@ -4,6 +4,14 @@ h1 {
     color: A9A9A9;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
 .TitleHeader {
     color: #A9A9A9;
     font-size: 24px;
