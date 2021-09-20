@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+    margin-top: 25%;
+    color: A9A9A9;
+}
+
+.TitleHeader {
+    color: #A9A9A9;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.FirstLicensingContainer {
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.SecondLicensingContainer {
+    width: 100%;
+    margin-top: 42.5vw;
+}
+
+.MP3Licensing {
+    float: left;
+    margin-left: 25vw;
+}
+
+.BasicLicensing {
+    float: left;
+    margin-left: 10vw;
+}
+
+.PremiumLicensing {
+    float: left;
+    margin-left: 10vw;
+    padding-top: 3px;
+}
+
+.UnlimitedLicensing {
+    float: left;
+    margin-left: 10vw;
+    padding-top: 3px;
+}
+
+.Exclusive-Unlimited {
+    margin-left: 70vw;
+    padding-top: 3px;
+}
+
+.LicensingOptions {
+    height: 35vw;
+    width: 20vw;
+    color: A9A9A9;
+    background-color: 1b1b1b;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.15vw;
+}
+
+h3 {
+    padding-top: 15px;
+}
+
+.LicensingOptions a {
+    text-decoration: none;
+    list-style-type: none;
+    color: 1180E8;
+}
+
+li {
+    padding: 10px;
+}
+
+.LicensingTitle {
+    margin-top: 75px;
+    text-align: center;
+    color: A9A9A9;
+}
+
+.LicensingTerms {
+    margin-top: 15vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: left;
+    color: A9A9A9;
+    padding: 5vw;
+    line-height: 50px;
+}
