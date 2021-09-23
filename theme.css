@@ -37,6 +37,15 @@
 	padding: 18px 20px;
 }
 
+.topnav span {
+	float: right;
+	font-size: 20px;
+	color: #A9A9A9;
+	text-align: center;
+	text-decoration: none;
+	padding: 18px 20px;
+}
+
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
