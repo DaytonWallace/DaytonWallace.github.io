@@ -1,95 +1,141 @@
-/* width */
-::-webkit-scrollbar {
-	width: 10px;
-	display: none;
+<!DOCTYPE html>
+<head>
+  	<title>Beats | SucleriousDidIt™</title>
+  	<link rel="shortcut icon" type="image/x-icon" href="https://suclerious.me/assets/logos/logok.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="site_name" content="SucleriousDidIt">
+	<meta name="url" content="https://suclerious.me/beats.html">
+	<meta name="title" content="SucleriousDidIt | Beats">
+	<meta name="description" content="SucleriousDidIt Beat Store. Coming Soon. (WIP)">
+	<meta name="type" content="website">
+	<meta name="image" content="https://suclerious.me/assets/logos/logok.png" />
+	<meta name="theme-color" content="#6200ff">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel="stylesheet" href="../theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body onload="myFunction()" style="background-color: 101010;">
+	<div class="beatStoreIntegration animate-bottom" id="beatStoreIntegration" style="display: none; width: 100%; height: 100%; position: relative;">
+		<div class="topnav" style="width: 75vw; float: right; position: absolute; margin-right: 30vw; color: FFF; margin-top: -0.75vw;">
+		    <a href="./licensing.html" style="color: FFFFFF; font-family: 'Poppins'; margin-top: 0.55vw; font-size: 1.15vw">Licensing</a>
+		</div>			
+		<iframe src="https://player.beatstars.com/?storeId=124456" title="Beat Store Integration" frameBorder="0" style="max-width: 100%; max-height: 100%; width: 100%; height: 100vh;"> -- none -- </iframe>
+	</div>
+
+
+		<div id="loader"></div>
+
+		<script>
+			var myVar;
+
+			function myFunction() {
+			  myVar = setTimeout(showPage, 3000);
+			}
+
+			function showPage() {
+			  document.getElementById("loader").style.display = "none";
+			  document.getElementById("beatStoreIntegration").style.display = "block";
+			}
+		</script>
+		
+		<style>
+	/*
+	.beatStoreIntegration {
+		opacity: 0;
+    animation: fadein 3s;
+	animation-delay: 3s;
+    -moz-animation: fadein 2s; 
+		-moz-animation-delay: 3s;
+    -webkit-animation: fadein 2s; 
+		-webkit-animation-delay: 3s;
+    -o-animation: fadein 2s; 
+		-o-animation-delay: 3s;
+		-webkit-animation-fill-mode: forwards;
+		-o-animation-fill-mode: forwards;
+		-moz-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
 }
-
-
-/* Track */
-
-::-webkit-scrollbar-track {
-	background: #1d2021;
-	border-radius: 12px;
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: #1d2021;
-	border-radius: 12px;
+@-moz-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-	background: #555;
+@-webkit-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
-
-.topnav {
-	overflow: hidden;
-	background-color: transparent;
-	width: 50vw;
+@-o-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+	*/
+	#loader {
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  z-index: 1;
+	  width: 120px;
+	  height: 120px;
+	  margin: -76px 0 0 -76px;
+	  border: 16px solid #1d2021;
+	  border-radius: 50%;
+	  border-top: 16px solid #FF00CD;
+	  -webkit-animation: spin 2s linear infinite;
+	  animation: spin 2s linear infinite;
+	}
 
-.topnav a {
-	float: right;
-	color: #A9A9A9;
-	text-align: center;
-	text-decoration: none;
-	font-size: 20px;
-	padding: 18px 20px;
-}
+	@-webkit-keyframes spin {
+	  0% { -webkit-transform: rotate(0deg); }
+	  100% { -webkit-transform: rotate(360deg); }
+	}
 
-.topnav span {
-	float: right;
-	font-size: 20px;
-	color: #A9A9A9;
-	text-align: center;
-	text-decoration: none;
-	padding: 18px 20px;
-}
+	@keyframes spin {
+	  0% { transform: rotate(0deg); }
+	  100% { transform: rotate(360deg); }
+	}
 
-body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #1d2021;
-}
+	/* Add animation to "page content" */
+	.animate-bottom {
+	  position: relative;
+	  -webkit-animation-name: animatebottom;
+	  -webkit-animation-duration: 1s;
+	  animation-name: animatebottom;
+	  animation-duration: 1s
+	}
 
-.topnav img {
-	display: inline-block;
-	float: left;
-	padding: 14px 16px;
-}
+	@-webkit-keyframes animatebottom {
+	  from { bottom:-100px; opacity:0 } 
+	  to { bottom:0px; opacity:1 }
+	}
 
-.topnav a:hover {
-	background-color: transparent;
-	color: FFFFFF;
-}
+	@keyframes animatebottom { 
+	  from{ bottom:-100px; opacity:0 } 
+	  to{ bottom:0; opacity:1 }
+		
+		
+	}
 
-.topnav a.active {
-	background-color: transparent;
-	color: FFFFFF;
-}
+</style>
+		
+</body>
 
-.topnavlogo {
-	font-size: 36px;
-	display: inline-block;
-}
-
-.topnavlogo a {
-	color: A9A9A9;
-	text-decoration: none;
-	display: inline-block;
-}
-
-body {
-	color: A9A9A9;
-}
-
-/*iframe {
-    width: 100%;
-    height: 50%;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    display: block;
-}
-*/
