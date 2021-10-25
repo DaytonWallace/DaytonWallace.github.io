@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     margin-top: 25%;
-    color: A9A9A9;
+    color: FFFFFF;
 }
 
 ul {
@@ -13,7 +13,7 @@ ul {
 }
 
 .TitleHeader {
-    color: #A9A9A9;
+    color: #FFFFFF;
     font-size: 24px;
     text-align: center;
     margin-top: 1%;
@@ -84,7 +84,7 @@ li {
 .LicensingTitle {
     margin-top: 75px;
     text-align: center;
-    color: A9A9A9;
+    color: FFFFFF;
 }
 
 .LicensingTerms {
@@ -92,6 +92,6 @@ li {
     margin-left: 15vw;
     margin-right: 15vw;
     text-align: left;
-    color: A9A9A9;
+    color: FFFFFF;
     line-height: 50px;
 }
