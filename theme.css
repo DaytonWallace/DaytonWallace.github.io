@@ -78,8 +78,6 @@ body {
 .topnavlogo a {
 	color: 000000;
 	text-decoration: none;
-	display: inline-block;
-	float: left;
 	padding: 0px 12px;
 	margin-left: 20vw;
 }
