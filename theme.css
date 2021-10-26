@@ -45,6 +45,7 @@
 	text-decoration: none;
 	margin-left: 70vw;
 	float: left;
+	display: inline-block;
 }
 
 body {
