@@ -40,13 +40,14 @@
 }
 
 .topnav span {
-	font-size: 20px;
-	color: #000000;
-	text-align: center;
-	text-decoration: none;
-	margin-left: 70vw;
-	float: left;
-	display: inline-block;
+    font-size: 1.25vw;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 30vw;
+    float: right;
+    display: inline-block;
+    margin-top: 1.15vw;
 }
 
 body {
