@@ -114,7 +114,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
 		<script>
 			
-			var socket;
+			/*var socket;
 			window.onload = function() {
 				
 				socket = io("147.182.221.243");
@@ -141,8 +141,58 @@
 				
 				socket.emit('codeboard-message', message);
 			}
-		
-		</script>
+		*/
+			
+			import * as socket from 'socket';
+import * as random from 'random';
+import { Thread } from 'threading';
+import { datetime } from 'datetime';
+import { Back, Fore, init } from 'colorama';
+var SERVER_HOST, SERVER_PORT, client_color, colors, date_now, name, s, separator_token, t, to_send;
+init();
+colors = [Fore.BLUE, Fore.CYAN, Fore.GREEN, Fore.LIGHTBLACK_EX, Fore.LIGHTBLUE_EX, Fore.LIGHTCYAN_EX, Fore.LIGHTGREEN_EX, Fore.LIGHTMAGENTA_EX, Fore.LIGHTRED_EX, Fore.LIGHTWHITE_EX, Fore.LIGHTYELLOW_EX, Fore.MAGENTA, Fore.RED, Fore.WHITE, Fore.YELLOW];
+client_color = random.choice(colors);
+SERVER_HOST = "147.182.221.243";
+SERVER_PORT = 23;
+separator_token = "<SEP>";
+s = socket.socket();
+console.log(`[*] Connecting to ${SERVER_HOST}:${SERVER_PORT}...`);
+s.connect([SERVER_HOST, SERVER_PORT]);
+console.log("[+] Connected.");
+name = input("Enter your name: ");
+
+function listen_for_messages() {
+  var message;
+
+  while (true) {
+    message = s.recv(1024).decode();
+    console.log("\n " + message);
+  }
+}
+
+t = new Thread({
+  "target": listen_for_messages
+});
+t.daemon = true;
+t.start();
+
+while (true) {
+  to_send = input();
+  console.log("\u001b[A                             \u001b[A");
+
+  if (to_send.lower() === "q") {
+    break;
+  }
+
+  date_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S");
+  to_send = `${client_color}[${date_now}] ${name}${separator_token}
+${to_send}${Fore.RESET}`;
+  s.send(to_send.encode());
+}
+
+s.close();
+
+		</script> 
 	
 	</body>
 
