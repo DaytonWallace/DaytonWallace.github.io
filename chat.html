@@ -119,7 +119,7 @@
 			var socket;
 			window.onload = function() {
 				
-				socket = io.connect('http://localhost:3000');
+				socket = io.connect("147.182.221.243");
 				
 				socket.on('message-from-others', function(message){
 					var html = '<div class="message-box others-message-box">' +
