@@ -1,5 +1,3 @@
-<title> Chat </title>
-
 <html>
 
 	<head>
@@ -93,7 +91,7 @@
 	<body>
 	
 		<div class="header-area">
-			<h1> Codeboard Global Chat </h1>
+			<h1> Gape </h1>
 		</div>
 		
 		<div class="message-area" id="message-area">
@@ -119,7 +117,7 @@
 			var socket;
 			window.onload = function() {
 				
-				socket = io.connect("147.182.221.243");
+				socket = io("147.182.221.243");
 				
 				socket.on('message-from-others', function(message){
 					var html = '<div class="message-box others-message-box">' +
