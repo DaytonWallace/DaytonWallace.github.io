@@ -41,7 +41,7 @@
 
 .topnav span {
     font-size: 1vw;
-    color: #000000;
+    color: #A9A9A9;
     text-align: center;
     text-decoration: none;
     margin-right: 25vw;
@@ -52,8 +52,9 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #FFFFFF;
+	background-color: #2b2e2f;
 	color: 000000;
+	width: 100vw;
 }
 
 .topnav img {
@@ -86,10 +87,35 @@ body {
     margin-right: -30vw;
 }
 
-footer { 
-	width: 100%;
+.footer { 
+	height: 10vw;
+	background-color: 1e2021;
+	bottom: 0;
+	position: absolute;
+	display: inline-block;
 }
 
-footer .GitHubLogo { 
-	align: center;
+footer #GitHubLogo { 
+	display: inline-block;
+	max-width: 55vw;
+	height: auto;
+}
+
+.logos::after {
+	content: "";
+	clear: both;
+	display: table;
+	
+}
+
+.GitHubLogo {
+	width: 39%;	
+	float: left;
+	margin-top: 3vw;
+}
+
+.BeatStarsLogo { 
+	width: 100%;
+	left: 30vw;
+	margin-top: 3.5vw;
 }
