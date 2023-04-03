@@ -85,3 +85,11 @@ body {
     display: inline-block;
     margin-right: -30vw;
 }
+
+footer { 
+	width: 100%;
+}
+
+footer .GitHubLogo { 
+	align: center;
+}
