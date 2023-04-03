@@ -1,24 +1,23 @@
-/* width */
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
 	width: 10px;
 	display: none;
 }
 
 
-/* Track */
+
 
 ::-webkit-scrollbar-track {
 	background: #FFFFFF;
 	border-radius: 12px;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
 	background: #FFFFFF;
 	border-radius: 12px;
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
@@ -26,7 +25,7 @@
 .topnav {
 	overflow: hidden;
 	background-color: transparent;
-	width: 50vw;
+	width: 5vw;
 	display: inline;
 }
 
@@ -36,7 +35,6 @@
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.25vw;
-	display: inline-block;
 }
 
 .topnav span {
@@ -48,13 +46,14 @@
     float: right;
     display: inline-block;
     margin-top: 0.66vw;
+	overflow: hidden;
 }
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #2b2e2f;
 	color: 000000;
-	width: 100vw;
+	height: 90vh;
 }
 
 .topnav img {
@@ -81,7 +80,7 @@ body {
 .topnavlogo a {
     color: 000000;
     text-decoration: none;
-    padding: 0px 12px;
+	padding: 0px 12px;
     float: right;
     display: inline-block;
     margin-right: -30vw;
@@ -91,21 +90,25 @@ body {
 	height: 10vw;
 	background-color: 1e2021;
 	bottom: 0;
-	position: absolute;
 	display: inline-block;
+	position: fixed;
 }
 
 footer #GitHubLogo { 
 	display: inline-block;
-	max-width: 55vw;
+	max-width: 50vw;
 	height: auto;
+	position: absolute;
 }
 
 .logos::after {
 	content: "";
 	clear: both;
-	display: table;
-	
+	display: table;	
+}
+
+.logos {
+	max-width: 90vw;
 }
 
 .GitHubLogo {
@@ -115,7 +118,7 @@ footer #GitHubLogo {
 }
 
 .BeatStarsLogo { 
-	width: 100%;
-	left: 30vw;
-	margin-top: 3.5vw;
+	width: 39%;
+	margin-left: 50vw;
+	margin-top: 3.45vw;
 }
