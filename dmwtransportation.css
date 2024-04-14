@@ -1,0 +1,148 @@
+html {
+    background-color: #181A1B;
+    color: #D4D0CA; 
+}
+
+
+
+::-webkit-scrollbar {
+	width: 10px;
+	display: none;
+}
+
+
+
+
+::-webkit-scrollbar-track {
+	background: #FFFFFF;
+	border-radius: 12px;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: #FFFFFF;
+	border-radius: 12px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-img{
+    /*background-image: url("./Assets/TruckCover.png");*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-size: cover;
+}
+
+.NavBar {
+    list-style-type: none;
+    position: sticky;
+    text-decoration: none;
+    height: 5vh;
+    font-size: 2vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#D4D0CA;
+    margin-left: 42.5vw;
+}
+
+.Main {
+    height:20vh;
+}
+
+a:visited {
+    color: #D4D0CA
+}
+
+.logoname {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.CompanyName {
+    font-weight: 2500;
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Statement {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1vw;
+    transform: translate(-50%, 90%);
+    background-color: rgb(24, 26, 27, 0.75);
+    border-radius: 1vw;
+}
+
+.YapContainer {
+    position:absolute;
+    display: block;
+    text-align: center;
+    width: 20%;
+    height: 10vh;
+    transform: translate(100%, 80vh)
+}
+
+.YapContainer h1 {
+    color: #e2ded8;
+}
+
+.YapContainer h5 {
+    color: #b1aeaa;
+    line-height: 4vh;
+    font-size: 1vw;
+    transform: translate(0%, -25%);
+}
+
+.YapContainer img {
+    transform: translate(75%, -100%);
+    border-radius: 12px;
+}
+
+.ContactButton {
+    border-radius: 0.5vw;
+    background-color: #1923aa;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding-right: 1.25vw;
+    padding-left: 1.25vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    position: fixed;
+    transform: translate(-50%, -55vh)
+}
+
+.XLogo {
+    max-width: 3vw;
+    height: auto;
+    margin-left: 45vw;
+    transform: translate(0%, 2500%);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.6vw;
+    transform: translate(-1.5%, 150vh);
+    list-style-type: none;
+}
+
+footer {
+    padding-top: 10vh;
+}
+
+.ConnectWithUs {
+    text-align:center;
+    transform: translate(0vw, 145vh)
+}
