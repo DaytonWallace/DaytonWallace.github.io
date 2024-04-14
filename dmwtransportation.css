@@ -3,7 +3,9 @@ html {
     color: #D4D0CA; 
 }
 
-
+* { 
+    margin: 0;
+}
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -51,6 +53,28 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#D4D0CA;
     margin-left: 42.5vw;
+    background-color:#181A1B
+}
+
+.NavBarContainer {
+    position: fixed;
+    background-color: #181A1B;
+    width: 100vw;
+    border-radius: 0, 0, 0.5vw, 0.5vw;
+}
+
+.NavName {
+    position: fixed;
+}
+
+.LoginButton {
+    text-decoration: none;
+    margin-left: 37.5vw;
+    position: fixed;
+    transform: translate(17vw, 1vh);
+    color: #D4D0CA;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
 }
 
 .Main {
@@ -92,7 +116,7 @@ a:visited {
     text-align: center;
     width: 20%;
     height: 10vh;
-    transform: translate(100%, 80vh)
+    transform: translate(100%, 82vh)
 }
 
 .YapContainer h1 {
@@ -103,11 +127,10 @@ a:visited {
     color: #b1aeaa;
     line-height: 4vh;
     font-size: 1vw;
-    transform: translate(0%, -25%);
 }
 
 .YapContainer img {
-    transform: translate(75%, -100%);
+    transform: translate(75%, -83.5%);
     border-radius: 12px;
 }
 
@@ -121,14 +144,15 @@ a:visited {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
     position: fixed;
-    transform: translate(-50%, -55vh)
+    transform: translate(-50%, -45vh)
 }
 
 .XLogo {
-    max-width: 3vw;
+    max-width: 2vw;
+    max-height: 2vw;
     height: auto;
     margin-left: 45vw;
-    transform: translate(0%, 2500%);
+    transform: translate(1vw, 140vh);
 }
 
 .copyright {
@@ -144,5 +168,5 @@ footer {
 
 .ConnectWithUs {
     text-align:center;
-    transform: translate(0vw, 145vh)
+    transform: translate(0vw, 135vh)
 }
