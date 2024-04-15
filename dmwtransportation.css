@@ -53,7 +53,9 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#D4D0CA;
     margin-left: 42.5vw;
-    background-color:#181A1B
+    background-color:#181A1B;
+    z-index: 999;
+    top: 0;
 }
 
 .NavBarContainer {
@@ -61,6 +63,8 @@ body {
     background-color: #181A1B;
     width: 100vw;
     border-radius: 0, 0, 0.5vw, 0.5vw;
+    top: 0;
+    z-index: 999;
 }
 
 .NavName {
@@ -81,6 +85,10 @@ body {
     height:20vh;
 }
 
+.CoverContainer {
+    z-index: 1;
+}
+
 a:visited {
     color: #D4D0CA
 }
@@ -97,6 +105,7 @@ a:visited {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .Statement {
