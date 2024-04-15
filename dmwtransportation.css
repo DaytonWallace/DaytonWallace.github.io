@@ -62,7 +62,6 @@ body {
     position: fixed;
     background-color: #181A1B;
     width: 100vw;
-    border-radius: 0, 0, 0.5vw, 0.5vw;
     top: 0;
     z-index: 999;
 }
